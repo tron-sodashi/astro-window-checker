@@ -13,10 +13,10 @@ once it's run (see "Hosting it" below).
 For each hour, clearoutside.com gives total cloud cover (%) and chance of
 precipitation (%). An hour counts as usable if:
 
-- **Night window**: total cloud cover \u2264 `MAX_CLOUD_NIGHT` (default 30%)
-- **Day window**: total cloud cover \u2264 `MAX_CLOUD_DAY` (default 20%, stricter
+- **Night window**: total cloud cover ≤ `MAX_CLOUD_NIGHT` (default 30%)
+- **Day window**: total cloud cover ≤ `MAX_CLOUD_DAY` (default 20%, stricter
   since solar observing needs a cleaner line to the Sun)
-- Either way, chance of precipitation \u2264 `MAX_PRECIP_PROB` (default 20%)
+- Either way, chance of precipitation ≤ `MAX_PRECIP_PROB` (default 20%)
 
 The **night** window is bounded by astronomical dusk/dawn (true darkness,
 not just sunset/sunrise) for that date, which correctly spans midnight into
@@ -90,7 +90,7 @@ myself.
 ## Hosting it (GitHub Actions + GitHub Pages, free)
 
 1. Create a new **public** GitHub repo and push this folder to it.
-2. In the repo, go to **Settings \u2192 Pages**, and under "Build and
+2. In the repo, go to **Settings → Pages**, and under "Build and
    deployment" set **Source: Deploy from a branch**, branch **main**,
    folder **/docs**. Save.
 3. Go to the **Actions** tab, open "Update astronomy forecast", and click
